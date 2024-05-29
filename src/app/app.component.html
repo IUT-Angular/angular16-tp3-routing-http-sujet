@@ -1,0 +1,11 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>List</button>
+  <button mat-menu-item>Form</button>
+</mat-menu>
+
+<h1>My book shop</h1>
+
+<app-book-list></app-book-list>
+
+<app-book-form></app-book-form>
