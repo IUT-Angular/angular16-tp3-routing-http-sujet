@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -10,7 +12,6 @@ import { BookListComponent } from './components/book-list/book-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
 import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
@@ -25,7 +26,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatFormFieldModule, 
     MatInputModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
   bootstrap: [AppComponent]
 })

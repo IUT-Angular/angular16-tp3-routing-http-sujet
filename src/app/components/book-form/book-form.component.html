@@ -1,23 +1,23 @@
 <section>
     <h2>Add book form</h2>
     
-    <form>
+    <form [formGroup]="bookForm">
         <mat-form-field class="full-width">
-            <mat-label>Title :</mat-label>
-            <input matInput type="text" />
+            <mat-label>Title</mat-label>
+            <input matInput type="text" formControlName="title" />
         </mat-form-field>
         
         <mat-form-field class="full-width">
-            <mat-label>Author :</mat-label>
-            <input matInput type="text" />
+            <mat-label>Author</mat-label>
+            <input matInput type="text" formControlName="author" />
         </mat-form-field>
         
         <mat-form-field class="full-width">
-            <mat-label>Publication date :</mat-label>
-            <input matInput type="text" />
+            <mat-label>Publication date</mat-label>
+            <input matInput type="text" formControlName="publicationDate" />
         </mat-form-field>
 
-        <button mat-flat-button color="primary" type="submit">Add</button>
+        <button mat-flat-button color="primary" type="button" (click)="addBook()">Add</button>
     </form>
 </section>
 
