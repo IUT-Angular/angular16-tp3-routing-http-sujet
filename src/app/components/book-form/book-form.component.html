@@ -14,7 +14,9 @@
         
         <mat-form-field class="full-width">
             <mat-label>Publication date</mat-label>
-            <input matInput type="text" formControlName="publicationDate" />
+            <input matInput [matDatepicker]="picker" type="text" formControlName="publicationDate" />
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
 
         <button mat-flat-button color="primary" type="button" (click)="addBook()">Add</button>

@@ -10,6 +10,8 @@ import { BookFormComponent } from './components/book-form/book-form.component';
 import { BookListComponent } from './components/book-list/book-list.component';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
@@ -27,8 +29,13 @@ import { MatMenuModule } from '@angular/material/menu';
     MatInputModule,
     MatButtonModule,
     MatMenuModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     FormsModule,
     ReactiveFormsModule 
+  ],
+  providers: [  
+    MatDatepickerModule,  
   ],
   bootstrap: [AppComponent]
 })
